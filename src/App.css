@@ -38,16 +38,11 @@
   font-size: 2em;
 }
 
-.nav a {
-  color: white;
-  text-decoration: none;
-}
-
-
 a {
   font-weight: 500;
-  color: #bce5b9;
+
   text-decoration: inherit;
+
 }
 a:hover {
   color: #29077a;
@@ -62,7 +57,7 @@ h1 {
 
   letter-spacing: 2px;
   font-weight: 500;
-  color:#062094
+
 }
 
 input[type="text"] {
@@ -84,3 +79,8 @@ form{
 
 }
 
+
+h2 + img{
+  border: 2px solid currentColor;
+
+}
