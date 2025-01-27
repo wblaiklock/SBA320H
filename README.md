@@ -4,5 +4,5 @@
 <h2>MovieMate</h2>
 <h3>A simple project for fetching movie data, created after another project proved not-so-simple. Uses HTML, CSS, Javascript, REACT, and Redux.</h3>
 
-
+Open at [MovieMate @ Netlify](https://moviem8.netlify.app/)
 > Enter a movie name to fetch details using OMDBapi.
