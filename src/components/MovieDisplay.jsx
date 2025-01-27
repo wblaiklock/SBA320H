@@ -16,7 +16,7 @@ function MovieDisplay({movie}) {
     const loading = () => {
         return (
             <>
-            <h1>No movie to display</h1>
+            <h1>Find your Favorite Movies</h1>
             </>
         )
     }

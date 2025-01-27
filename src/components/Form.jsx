@@ -22,10 +22,10 @@ function Form(props) {
         
     return (
         <div>
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit}>Find Movie:
                 <input 
                 type="text"
-                name="searchterm"
+                name="searchterm" placeholder="Search.."
                 onChange={handleChange}
                 value={formData.searchterm}
                 />

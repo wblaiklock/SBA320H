@@ -21,9 +21,6 @@ function App() {
     }
   }
 
-  useEffect(()=>{    //runs once
-    getMovie("Moana")
-  }, [])
 
   return (
     <div className="App">

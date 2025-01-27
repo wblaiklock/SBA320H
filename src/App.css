@@ -61,6 +61,7 @@ h1 {
 
   letter-spacing: 3px;
   font-weight: 500;
+  color:#2a06c7
 }
 
 input[type="text"] {
@@ -72,3 +73,13 @@ input[type="text"] {
 input[type="submit"] {
   padding: 8px 8px;
 }
+
+form{
+  font-size: 1.4rem;
+
+  letter-spacing: 1px;
+  font-weight: 500;
+  padding-right: 8px;
+
+}
+
