@@ -27,6 +27,7 @@ function App() {
 
   return (
     <div className="App">
+        <img src="/img/logo.png" className="logo"/>
         <Form movieSearch = {getMovie}/>
         <MovieDisplay movie = {movie}/>
   
