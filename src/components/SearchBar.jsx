@@ -12,7 +12,7 @@ export const SearchBar = ({ onSearchChange }) => {
     }
     const searchMovies = (evt) =>{
         evt.preventDefault();
-         if (search.length > 3) {
+         if (search.length > 2) {
             onSearchChange(search)
         }
     }

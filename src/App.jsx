@@ -70,7 +70,7 @@ function App() {
         <img src="/img/logo.png" className="logo"/>
         <Navbar onSearchChange = {callApi}/>
         {/* <Form movieSearch = {getMovie}/> */}
-        {movies ?  <></> : <img src="/img/logo.png" className="logo-big"/>}
+        {movies.length > 0 ?  <></> : <img src="/img/logo.png" className="logo-big"/>}
 
         <MovieList onSelectMovie={selectMovie} movies={movies}/>
         {/* <MovieDetail movie={selectedMovie }/> */}
