@@ -10,8 +10,8 @@ export const Navbar = ( {onSearchChange} ) => {
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
               <span className="navbar-toggler-icon" />
             </button><img src="/img/logo.png" className="logo"/>
-                    {/* <Menu /> */}
-                    <SearchBar onSearchChange= {onSearchChange} ></SearchBar> 
+
+            <SearchBar onSearchChange= {onSearchChange} ></SearchBar> 
           </div>
         </nav>
       </header>

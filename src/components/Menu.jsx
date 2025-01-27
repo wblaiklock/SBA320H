@@ -12,6 +12,6 @@ export const Menu = (params) => {
                     <a className="nav-link disabled" href="/series" tabIndex={-1} aria-disabled="true">Disabled</a>
                 </li>
             </ul>
-             
-        </div>);
+        </div>
+    );
 }
