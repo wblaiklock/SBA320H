@@ -2,7 +2,7 @@
 
 <h1>SBA 320: React Web Application Project</h1>
 <h2>MovieMate</h2>
-<h3>A simple project for fetching movie data, created after another project proved not-so-simple. Uses HTML, CSS, JAvascript, REACT, and Redux.</h3>
+<h3>A simple project for fetching movie data, created after another project proved not-so-simple. Uses HTML, CSS, Javascript, REACT, and Redux.</h3>
 
 
 > Enter a movie name to fetch details using OMDBapi.
