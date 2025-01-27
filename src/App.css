@@ -90,8 +90,10 @@ h2 + img{
 }
 
 #item{
-  border: 2px solid currentColor;
+  border: 2px solid rgb(51, 21, 158);
   margin-top: 3em;
+  padding:1em;
+  background-color: rgb(255, 250, 236);
 }
 
 

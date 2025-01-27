@@ -13,9 +13,8 @@ function App() {
 
   const apiKey = '7d9932fb'
   const [movies, setMovies] = useState([]);
-  const [movie, setMovie] = useState(null);
   const [selectedMovie, setSelectedMovie] = useState(null);
-  const [totalCount, setTotalCount] = useState(0);
+
   const [error, setError] = useState('');
   
   const fetchMovies = async (search = 'The godfather') => {
@@ -28,17 +27,18 @@ function App() {
     return { movies, totalCount, Error: Error ?? '' };
   }
 
-  const selectMovie = async (movie) => {
+  const selectMovie = async (m) => {
     
-    setSelectedMovie(movie);
-    const newMovie = await fetchMovieById(movie.imdbID);
+    setSelectedMovie(m);
+    const newMovie = await fetchMovieById(m.imdbID);
      if (newMovie.Error) {
-       setErrorDetail(newMovie.Error);
         setSelectedMovie(null); 
      } else {
        setSelectedMovie(newMovie); 
      }
-   
+
+     var scrollDiv = document.getElementById("item").offsetTop;
+     window.scrollTo({ top: scrollDiv, behavior: 'smooth'});
   };
   const fetchMovieById = async (movieId) => {
  
@@ -46,29 +46,20 @@ function App() {
    
     return response;
   }
-  const getMovie = async (searchTerm) => {
-    try{
-      const response = await fetch(`https://www.omdbapi.com/?apikey=${apiKey}&t=${searchTerm}`)
-      const data = await response.json()
 
-      setMovie(data);
-    } catch (error) {
-    console.error(error);
-    }
-  }
 
   const callApi = async (search = '') => {
 
     const data = await fetchMovies(search);
-    console.log(data)
 
+    setSelectedMovie(null); 
    
     if (!data.Error.length) {
       setMovies(data.movies);
-      setSelectedMovie(data.movies[0])
-      setTotalCount(data.totalCount);
+     
+
     } else {
-      setTotalCount(0);
+
       setMovies([]);
     }
   }
@@ -79,11 +70,11 @@ function App() {
         <img src="/img/logo.png" className="logo"/>
         <Navbar onSearchChange = {callApi}/>
         {/* <Form movieSearch = {getMovie}/> */}
-        <img src="/img/logo.png" className="logo-big"/>
+        {movies ?  <></> : <img src="/img/logo.png" className="logo-big"/>}
 
         <MovieList onSelectMovie={selectMovie} movies={movies}/>
-        <MovieDetail movie={selectedMovie }/>
-         <MovieDisplay movie = {selectedMovie}/>
+        {/* <MovieDetail movie={selectedMovie }/> */}
+       {  selectedMovie ? <MovieDisplay movie = {selectedMovie}/> : <></>}
 
     </div>
   )
