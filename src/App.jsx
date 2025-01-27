@@ -21,9 +21,6 @@ function App() {
     }
   }
 
-  useEffect(()=>{    //runs once
-    getMovie("Gladiator")
-  }, [])
 
   return (
     <div className="App">
