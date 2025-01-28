@@ -1,5 +1,3 @@
-*Note this project was restarted from another attempt after some time*
-
 <h1>SBA 320: React Web Application Project</h1>
 <h2>MovieMate</h2>
 <h3>A simple project for fetching movie data. Uses HTML, CSS, Javascript, and REACT</h3>
