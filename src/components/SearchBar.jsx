@@ -19,7 +19,7 @@ export const SearchBar = ({ onSearchChange }) => {
     return (<form className="d-flex">
         <input className="form-control me-2"
             name ="search" value={search} onChange = {manageSearch}
-            type="search" aria-label="Search" placeholder="Search.."/>
+            type="search" aria-label="Search" placeholder="Search for Movies..."/>
         <button  onClick = {searchMovies} className="btn btn-outline-success" type="submit">Search</button>
          <button onClick ={()=> {setSearch('')}} className="btn btn-outline-info" type="reset">Reset</button>
     </form>);
